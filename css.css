@@ -1,0 +1,129 @@
+/* .dialog{
+border-radius: 20px;
+background: yellow;
+} */
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
+.hide {
+	display: none;
+}
+
+.dialog {
+	/* position: relative; */
+	padding: 5px;
+	background: green;
+	width: 100%;
+	height: 100%;
+}
+
+.message {
+	height: 1000px;
+	border: 10px;
+	background: white;
+	
+}
+
+.bot {
+	position: fixed;
+}
+.sms {
+	width: 70%;
+	margin-right: 10px;
+}
+
+.send {
+	width: 30%;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	width: 288px;
+}
+
+.div {
+	/* display: flex;
+	justify-content: space-between;
+	align-items: stretch;	 */
+	border-bottom: 1px solid rgba(0,0,0,0.5) ;
+	/* background: red; */
+	/* margin-top: 1px; */
+	animation: 0.5s ease spawn_msg;
+}
+
+@keyframes spawn_msg {
+	from{
+		transform: translateX(100%);
+	}
+	to{
+		transform: translateX(0%);
+	}
+}
+
+.message {
+	width: 288px;
+	max-height: 400px; /*Высота блока после которой начнется прокрутка*/    
+	display: inline-block;    
+	overflow-x: hidden; /*непосредственно прокрутка*/    
+
+}
+
+.name {
+	/* border-left: 3px solid #c24c4c;	 */
+	font-size: 18px;
+	font-weight: bold;
+	border-left: 3px solid black;
+}
+
+.text {
+	word-wrap: break-word; /* Перенос слов */ 
+	font-style: italic;
+	font-size: 16px;
+}
+
+.data{
+	font-style: italic;
+	font-size: 10px;
+	color: green;
+	border: 1px solid red;
+	width: 40px;
+}
+
+.top {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+.okno {
+	text-align: center;
+	background: blue;
+	width: 300px;
+    padding: 10px; /* Поля вокруг текста */
+	margin: auto; /* Выравниваем по центру */
+	margin-top: 200px;
+}
+
+.h1 {
+	width: 100%;
+}
+
+.click {
+	display: flex;
+	justify-content: space-between;
+    align-items: stretch;
+    
+}
+
+.input {
+	width: 65%;
+}
+
+.button {
+	width: 30%;
+}
